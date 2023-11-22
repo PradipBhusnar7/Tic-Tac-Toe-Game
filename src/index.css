@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-bg-dark: #192a33;
+  --color-bg-light: #1f3640;
+  --color-gray: #a8bec9;
+  --color-gray-dark: #7a8991;
+  --color-yellow: #f2b238;
+  --color-yellow-dark: #cd8d16;
+  --color-blue: #30c4be;
+  --color-blue-dark: #128c89;
+  --shadow-y: 6px;
+}
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+body {
+  color: var(--color-gray);
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+.container {
+  max-width: 450px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
+
+/* utilites  */
+.one {
+  position: relative;
+  width: 401px;
+  top: 60px;
+  left: 25px;
+}
+.card {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 15px;
+  background-color: var(--color-bg-light);
+  text-align: center;
+}
+.bg-light {
+  background-color: var(--color-gray);
+  color: var(--color-bg-dark);
+}
+.bg-yellow {
+  background-color: var(--color-yellow);
+  color: var(--color-bg-dark);
+}
+.bg-blue {
+  background-color: var(--color-blue);
+  color: var(--color-bg-dark);
+}
+
+.text {
+  font-size: 1rem;
+}
+.text-lg {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+.text-2xl {
+  line-height: 11px;
+  font-size: 1.725rem;
+}
+.text-light {
+  margin-top: -10px;
+  color: var(--color-gray-dark);
+}
+
+.bg-blue.text-light,
+.bg-blue .text-light,
+.bg-yellow.text-light,
+.bg-yellow .text-light,
+.bg-light.text-light,
+.bg-light .text-light {
+  color: var(--color-bg-light);
+}
+
+.btn {
+  border: none;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+  display: inline-block;
+  color: var(--color-bg-light);
+}
+.btn:hover {
+  --shadow-y: 8px;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  --shadow-y: 4px;
+}
+.btn-sm {
+  position: relative;
+  top: 20px;
+  left: -30px;
+  --shadow-y: 4px;
+  background-color: #a7bdc8;
+}
+
+.btn-sm:hover {
+  --shadow-y: 6px;
+}
+.btn-sm:active {
+  --shadow-y: 3px;
+}
+
+.shadow-gray {
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.shadow-blue {
+  box-shadow: 0 8px 0 var(--color-blue-dark);
+}
+.shadow-yellow {
+  box-shadow: 0 8px 0 var(--color-yellow-dark);
+}
+.startYe {
+  position: absolute;
+  top: 390px;
+  left: 585px;
+  border: none;
+  width: 401px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+  display: inline-block;
+  background-color: var(--color-yellow);
+}
+.startbl {
+  position: absolute;
+  top: 450px;
+  left: 585px;
+  border: none;
+  width: 401px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.invite-btn {
+  position: absolute;
+  top: 550px;
+  left: 640px;
+  border: none;
+  width: 300px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+  display: inline-block;
+  background-color: var(--color-yellow);
+}
+
+/* xo icons  */
+.icon {
+  display: inline-block;
+}
+.icon svg {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.icon-sm svg {
+  width: 30px;
+  height: 30px;
+}
+.icon-lg svg {
+  width: 65px;
+  height: 65px;
+}
+.icon-yellow svg {
+  fill: var(--color-yellow);
+}
+.icon-blue svg {
+  fill: var(--color-blue);
+}
+.icon-dark svg {
+  fill: var(--color-bg-dark);
+}
+
